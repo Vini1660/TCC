@@ -142,7 +142,7 @@ body {
 
 .card-cadastro {
     width: 50%;
-    height: 25rem;
+    height: 60%;
     margin-top: 8rem;
     margin-left: 10rem;
     position: relative;
@@ -313,8 +313,8 @@ form {
 }
 
 .image {
-    width: 15rem;
-    height: 12.5rem;
+    width: 85%;
+    height: 50%;
     background-color: #d9d9d9;
     border-width: 1px;
     border-style: solid;
