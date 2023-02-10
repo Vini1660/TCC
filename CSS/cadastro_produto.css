@@ -118,7 +118,7 @@ body {
 }
 
 .list-out {
-    margin-top: 280px;
+    margin-top: 40vh;
 }
 
 
@@ -141,10 +141,10 @@ body {
 
 
 .card-cadastro {
-    width: 50%;
-    height: 60%;
+    width: 40rem;
+    height: 25rem;
     margin-top: 8rem;
-    margin-left: 10rem;
+    margin-left: 15rem;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -303,6 +303,16 @@ form {
     outline: none;
     box-sizing: border-box;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.buttons-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .icon {
@@ -314,7 +324,7 @@ form {
 
 .image {
     width: 80%;
-    height: 60%;
+    height: 30vh;
     background-color: #d9d9d9;
     border-width: 1px;
     border-style: solid;
