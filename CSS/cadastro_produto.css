@@ -120,7 +120,7 @@ body {
 
 .out{
     position: absolute;
-    bottom:1rem;
+    bottom: 2rem;
 }
 
 
@@ -146,8 +146,8 @@ body {
     width: 40rem;
     height: 25rem;
     margin-top: 8rem;
-    margin-left: 16rem;
     position: relative;
+    left: 30%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
