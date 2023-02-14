@@ -117,8 +117,9 @@ body {
 
 }
 
-.list-out {
-    margin-top: 40vh;
+.out{
+    position: relative;
+    top: 17rem;
 }
 
 
@@ -144,7 +145,7 @@ body {
     width: 40rem;
     height: 25rem;
     margin-top: 8rem;
-    margin-left: 15rem;
+    margin-left: 16rem;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
