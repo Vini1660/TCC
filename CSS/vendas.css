@@ -8,7 +8,7 @@
 body {
     display: flex;
     min-height: 100vh;
-    background: white;
+    background: #F2F2F2;
 }
 
 .navigation {
@@ -25,7 +25,7 @@ body {
 }
 
 .navigation:hover {
-    width: 150px;
+    width: 170px;
 }
 
 .navigation ul {
@@ -33,6 +33,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     padding-left: 3px;
     padding-top: 40px;
 }
@@ -76,14 +77,11 @@ body {
     height: 60px;
     line-height: 60px;
     white-space: unset;
+    z-index: 1;
 }
 
 .navigation ul li.active {
     background: #011029;
-}
-
-.list-out {
-    margin-top: 238px;
 }
 
 .navigation ul li.active a::before {
@@ -111,6 +109,12 @@ body {
     box-shadow: 15px -15px 0 #011029;
 
 }
+
+.out{
+    position: absolute;
+    bottom: 2rem;
+}
+
 
 
 
@@ -165,12 +169,57 @@ body {
 
 .item-list {
     width: 25%;
-    height: 95%;
-    background-color: rgb(233, 223, 223);
+    height: 90%;
+    background-color: white;
     border-radius: 15px;
     position: relative;
-    margin-right: 10px;
+    margin-right: 2rem;
 
+}
+
+.lista{
+    color:#2E3559;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    
+}
+
+.item-list-final{
+    width: 90%;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+
+}
+
+.item-list-card{
+    width: 100%;
+    height: 5rem;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.item-list-final-image{
+    width: 4rem;
+    height: 4rem;
+    background-color: #0a2654;
+    border-radius: 15px;
+    margin-left: 1rem;
+}
+
+.item-list-final-description{
+
+}
+
+.name-product{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: 700;
 }
 
 .item-menu {
