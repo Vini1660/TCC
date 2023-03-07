@@ -142,9 +142,16 @@ body {
     align-items: center;
 }
 
+.item-menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+
 .card-itens {
     width: 60vw;
-    height: 80vh;
+    height: 100%;
     display: flex;
     margin-left: 20px;
     align-items: flex-start;
@@ -158,6 +165,17 @@ body {
 .card-itens-right {
     width: 30%;
     height: 100vh;
+}
+
+.search-bar input {
+    width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+    outline: none;
+    padding: 10px;
 }
 
 .item {
@@ -176,7 +194,6 @@ body {
     border-radius: 15px;
     position: relative;
     margin-right: 2rem;
-    font-family: 
 }
 
 .lista{
@@ -190,7 +207,7 @@ body {
 
 .item-list-final{
     width: 90%;
-    position: absolute;
+    position: relative;
     top: 4rem;
     left: 1rem;
 
@@ -209,6 +226,13 @@ body {
     background-color: #0a2654;
     border-radius: 15px;
     margin-left: 1rem;
+}
+
+.item-list-final-description{
+    position: relative;
+    width: ;
+    height: ;
+    background-color: #011029;
 }
 
 .name-product{
@@ -232,28 +256,20 @@ body {
     font-weight: 400;
 }
 
-.sale-summary{
-    width: 100%;
-    height: 35%;
-    background-color: blue;
+.total-price{
     position: absolute;
     bottom: 0;
 }
 
-
-.item-menu {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.search-bar input {
-    width: 40%;
-    height: 30px;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+.sale-summary{
+    width: 100%;
+    height: 35%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    border:transparent;
+    border-top: #C7C6C6;
+    border-width: 1px;
     border-style: solid;
-    outline: none;
-    padding: 10px;
 }
+
