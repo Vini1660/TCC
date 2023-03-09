@@ -13,113 +13,6 @@ body {
     background: #F2F2F2;
 }
 
-.navigation {
-    position: fixed;
-    display: flex;
-    justify-content: flex-start;
-    height: 100vh;
-    background: #0a2654;
-    width: 70px;
-    box-shadow: 10px 0 0 #011029;
-    border-left: 10px solid #0a2654;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.navigation:hover {
-    width: 170px;
-}
-
-.navigation ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 3px;
-    padding-top: 40px;
-}
-
-.navigation ul li {
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.navigation ul li a {
-    position: relative;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.navigation ul li a .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 70px;
-}
-
-.navigation ul li a .icon ion-icon {
-    position: relative;
-    font-size: 1.5rem;
-    z-index: 1;
-}
-
-.navigation ul li a .title {
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: unset;
-    z-index: 1;
-}
-
-.navigation ul li.active {
-    background: #011029;
-}
-
-.navigation ul li.active a::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: #0a2654;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 #011029;
-
-}
-
-.navigation ul li.active a::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: #0a2654;
-    border-radius: 50%;
-    box-shadow: 15px -15px 0 #011029;
-
-}
-
-.out{
-    position: absolute;
-    bottom: 2rem;
-}
-
-
-
-
 .foto {
     display: flex;
     flex-direction: column;
@@ -155,27 +48,23 @@ body {
     width: 60vw;
     height: 100%;
     display: flex;
-    margin-left: 5;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .card-itens li{
-    width: 35%;
-    height: 25%;
     list-style: none;
-    margin: 1rem;
     display: flex;
 }
 
 .item {
-    width: 95%;
+    width: 30%;
     height: 20%;
     margin-bottom: 10px;
     margin-top: 10px;
-    background-color: rgb(233, 223, 223);
-    border-radius: 15px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
     padding: 10px;
 }
 
@@ -186,6 +75,13 @@ body {
     border-bottom-left-radius: 10px;
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C7C6C6;
+
 }
 
 #left-side h1{
@@ -201,15 +97,11 @@ body {
 .product-price-bottom{
     position: relative;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 20%;
     font-weight: 700;
     color: #2E3559;
-}
-#product-price{
-
 }
 
 #right-side{
@@ -217,14 +109,48 @@ body {
     height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side-top{
+    width: 100%;
+    height: 65%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.product-image{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+}
+
+.button-qnt{
+    width: 100%;
+    height: 35%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-bottom{
+    width: 4rem;
+    height: 75%;
+    background-color: #4B5274;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
 }
 
 .search-bar{
-    position: absolute;
-    top: 5rem;
-    left: 13rem;
+    position: relative;
     width: 40rem;
     height: 3rem;
+    margin-left: 15px;
 
 }
 
@@ -235,6 +161,7 @@ body {
     border-style: solid;
     outline: none;
     padding: 10px;
+    border: none;
 }
 
 .item-list {
@@ -293,4 +220,5 @@ body {
     border-width: 1px;
     border-style: solid;
 }
+
 
