@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <diV class="main">
+    <div class="main">
         <div class="navigation">
             <ul>
                 <li class="list">
@@ -67,40 +67,57 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-    <main class="main">
+    <!-- <main class="main"> -->
+
+        
+        <section class="search-bar">
+            <input type="search" placeholder="Pesqisar..." id="search"> 
+        </section> 
 
         <div class="item-menu">
-
-            <section class="search-bar">
-                <input type="search" placeholder="Pesqisar..." id="search"> 
-            </section>
-
-            <div class="card-itens">
-                <div class="card-itens-left">
-                    <div class="item"></a></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                <div class="card-itens-right">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
+            <ul class="card-itens">
+                    <li class="item">
+                        <section id="left-side">
+                            <h1>Nome do produto</h1>
+                            <h2>descrição do produto</h2>
+                            <div class="product-price-bottom">
+                                <span id="product-price">R$7,50</span>
+                            </div>
+                        </section>
+                        <section id="right-side">b</section>
+                    </li>
+                    <li class="item">
+                        <section id="left-side">
+                            <h1>Nome do produto</h1>
+                            <h2>descrição do produto</h2>
+                            <div class="product-price-bottom">
+                                <span id="product-price">R$7,50</span>
+                            </div>
+                        </section>
+                        <section id="right-side">b</section>
+                    </li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+            </ul>
         </div>
 
         <div class="item-list">
             <span class="lista">Lista</span>
-            <div class="item-list-final">
-                <div class="item-list-card">
-                    <div class="item-list-final-image"></div>
-                    <div class="item-list-final-description">
-                        <span class="name-product">Nome do produto</span>
-                        <span class="item-qnt">x4</span> 
-                        <span class="final-price">R$30,00</span>
-                    </div>
+            <div class="item-list-card">
+                <div class="item-list-final-image"></div>
+                <div class="item-list-final-description">
+                    <span class="name-product">Nome do produto</span>
+                    <span class="item-qnt">x4</span> 
+                    <span class="final-price">R$30,00</span>
                 </div>
-
+            </div>
+            <div class="item-list-final">
                 <span class="total-price">Total</span>
                 <span class="total-price">R$30,00</span>
             </div>
@@ -111,7 +128,7 @@
                 a
             </section>
         </div>
-    </main>
+    </div>
 
 
 </body>
