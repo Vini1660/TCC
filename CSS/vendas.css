@@ -170,7 +170,7 @@ body {
     height: 90%;
     background-color: white;
     border-radius: 15px;
-    position: fixed;
+    position: relative;
     margin-right: 2rem;
 }
 
