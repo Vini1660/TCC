@@ -104,3 +104,10 @@
     bottom: 2rem;
 }
 
+@media screen and (min-width: 1920px){
+
+    .navigation:hover {
+        width: 200px;
+    }
+
+}
