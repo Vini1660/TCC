@@ -96,7 +96,32 @@
                             </div>
                         </div>
                         <div class="button-qnt">
-                            <button id="button-bottom">#</button>
+                            <span class="minus">-</span>
+                            <span class="num">00</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="item">
+                    <section id="left-side">
+                        <div class="top">
+                            <h1>Nome do produto</h1>
+                            <h2>descrição do produto</h2>
+                        </div>
+                        <div class="product-price-bottom">
+                            <span id="product-price">R$7,50</span>
+                        </div>
+                    </section>
+                    <section id="right-side">
+                        <div class="right-side-top">
+                            <div class="product-image" id="product-image">
+
+                            </div>
+                        </div>
+                        <div class="button-qnt">
+                            <span class="minus">-</span>
+                            <span class="num">00</span>
+                            <span class="plus">+</span>
                         </div>
                     </section>
                 </li>
@@ -113,56 +138,17 @@
                         <section id="right-side">
                             <div class="right-side-top">
                                 <div class="product-image" id="product-image">
-
+    
                                 </div>
                             </div>
                             <div class="button-qnt">
-                                <button id="button-bottom">#</button>
+                                <span class="minus">-</span>
+                                <span class="num">00</span>
+                                <span class="plus">+</span>
                             </div>
                         </section>
                     </li>
-                    <li class="item"><li class="item">
-                        <section id="left-side">
-                            <div class="top">
-                                <h1>Nome do produto</h1>
-                                <h2>descrição do produto</h2>
-                            </div>
-                            <div class="product-price-bottom">
-                                <span id="product-price">R$7,50</span>
-                            </div>
-                        </section>
-                        <section id="right-side">
-                            <div class="right-side-top">
-                                <div class="product-image" id="product-image">
-
-                                </div>
-                            </div>
-                            <div class="button-qnt">
-                                <button id="button-bottom">#</button>
-                            </div>
-                        </section>
-                    </li></li>
-                    <li class="item"><li class="item">
-                        <section id="left-side">
-                            <div class="top">
-                                <h1>Nome do produto</h1>
-                                <h2>descrição do produto</h2>
-                            </div>
-                            <div class="product-price-bottom">
-                                <span id="product-price">R$7,50</span>
-                            </div>
-                        </section>
-                        <section id="right-side">
-                            <div class="right-side-top">
-                                <div class="product-image" id="product-image">
-
-                                </div>
-                            </div>
-                            <div class="button-qnt">
-                                <button id="button-bottom">#</button>
-                            </div>
-                        </section>
-                    </li></li>
+                    <li class="item"></li>
                     <li class="item"></li>
                     <li class="item"></li>
                     <li class="item"></li>
@@ -171,6 +157,32 @@
                     <li class="item"></li>
             </ul>
         </div>
+
+        <script>
+
+            const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+
+            let a = 0;
+
+            plus.addEventListener("click", ()=>{
+                a++;
+                a = (a <10) ? "0" + a : a;
+                num.innerText = a;
+                console.log("a");
+            });
+
+            minus.addEventListener("click", ()=>{
+                if(a > 0){
+                    a--;
+                    a = (a <10) ? "0" + a : a;
+                    num.innerText = a;
+                }
+                
+            });
+
+        </script>
 
         <div class="item-list">
             <span class="lista">Lista</span>
