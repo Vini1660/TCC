@@ -40,7 +40,7 @@ body {
     height: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 18rem;
+    margin-top: 10rem;
 }
 
 
@@ -49,8 +49,8 @@ body {
     height: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .card-itens li{
@@ -59,11 +59,11 @@ body {
 }
 
 .item {
-    width: 30%;
-    height: 20%;
+    width: 40%;
+    height: 25%;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 10%;
     background-color: #FFFFFF;
     border-radius: 13px;
     padding: 10px;
@@ -149,20 +149,31 @@ body {
 
 .search-bar{
     position: relative;
-    width: 40rem;
+    width: 25vw;
     height: 3rem;
-    margin-left: 13px;
+    display: flex;
+    align-items: center;
 
 }
 
 .search-bar input {
-    width: 40%;
+    width: 85%;
     height: 30px;
     border-radius: 20px;
     border-style: solid;
     outline: none;
     padding: 10px;
     border: none;
+}
+
+#search-icon{
+    position: absolute;
+    right: 4rem;
+}
+
+#filter-icon{
+    right: 0;
+    margin-left: 3px;
 }
 
 .item-list {
@@ -222,11 +233,11 @@ body {
     border-style: solid;
 }
 
-    @media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px){
 
 .item{
-    width: 25%;
-    height: 15%;
+    width: 35%;
+    height: 20%;
 }
 
     }
