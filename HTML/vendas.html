@@ -157,53 +157,66 @@
                     <li class="item"></li>
             </ul>
         </div>
+<script>
+        
+const plus = document.querySelector(".plus"),
+minus = document.querySelector(".minus"),
+num = document.querySelector(".num");
 
-        <script>
+let a = 0;
 
-            const plus = document.querySelector(".plus"),
-            minus = document.querySelector(".minus"),
-            num = document.querySelector(".num");
+plus.addEventListener("click", ()=>{
+    a++;
+    a = (a <10) ? "0" + a : a;
+    num.innerText = a;
+    console.log("a");
+});
 
-            let a = 0;
+minus.addEventListener("click", ()=>{
+    if(a > 0){
+        a--;
+        a = (a <10) ? "0" + a : a;
+        num.innerText = a;
+    }
+    
+});
 
-            plus.addEventListener("click", ()=>{
-                a++;
-                a = (a <10) ? "0" + a : a;
-                num.innerText = a;
-                console.log("a");
-            });
+</script>
 
-            minus.addEventListener("click", ()=>{
-                if(a > 0){
-                    a--;
-                    a = (a <10) ? "0" + a : a;
-                    num.innerText = a;
-                }
-                
-            });
-
-        </script>
 
         <div class="item-list">
             <span class="lista">Lista</span>
             <div class="item-list-card">
                 <div class="item-list-final-image"></div>
-                <div class="item-list-final-description">
-                    <span class="name-product">Nome do produto</span>
-                    <span class="item-qnt">x4</span> 
-                    <span class="final-price">R$30,00</span>
-                </div>
+                    <div class="item-list-final-description">
+                        <section id="name-product">
+                            <span class="name-product">Nome do produto</span>
+                        </section>
+                        <section id="item-qtd">
+                            <span class="item-qnt">x4</span> 
+                        </section>
+                        <span class="final-price">R$30,00</span>
+                    </div>
             </div>
-            <div class="item-list-final">
+            <!-- <div class="item-list-final">
                 <span class="total-price">Total</span>
                 <span class="total-price">R$30,00</span>
-            </div>
-            <section class="sale-summary">
-                <div class="total">
+            </div> -->
+                <div class="sale-summary">
+                    <div class="button-pay-form">
+                        <button id="pay-form">Dinheiro</button>
+                        <button id="pay-form">Debito</button>
+                        <button id="pay-form">Credito</button>
+                        <button id="pay-form">Pix</button>
+                    </div>
                     
+                    <div class="button-close-sale">
+                        <button id="clean">Limpar</button>
+                        <button id="finalize">Finalizar</button>
+                    </div>
                 </div>
-                a
-            </section>
+                
+            </div>
         </div>
     </div>
 
