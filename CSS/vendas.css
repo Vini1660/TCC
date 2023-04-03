@@ -50,7 +50,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    position: relative;
+    position: ;
 }
 
 .card-itens li{
@@ -294,6 +294,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
+ }
+
+ .button-pay-form svg{
+    width: 25px;
+ }
+
+ #pay-form:focus{
+    background:#7A82AB;
+    border: 1px;
+    border-style: solid;
+    border-color: #262840;
  }
 
  .button-close-sale{
@@ -302,6 +314,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    cursor: pointer;
  }
 
  .button-close-sale button{
