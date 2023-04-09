@@ -69,6 +69,11 @@ svg{
     cursor: pointer;
 } 
 
+.start-business a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .login-acount{
     position: absolute;
     width: 25%;
@@ -105,15 +110,4 @@ a:active{
 
 #proprietario{
     margin-right: 1rem;
-}
-
-footer{
-    width: 100%;
-    height: 5%;
-    background-color: #2E3559;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
