@@ -22,6 +22,7 @@ main{
 #c-top{
     left: 20%;
     top: -25%;
+    overflow: hidden;
 }
 
 #c-bottom-left{
@@ -32,6 +33,7 @@ main{
 #c-bottom-right{
     bottom: -15rem;
     right: -15%;
+    overflow: hidden;
 }
 
 svg{
