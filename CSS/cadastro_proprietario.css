@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-.card {
+form {
     width: 50%;
     height: 100%;
     display: flex;
@@ -52,6 +52,10 @@ body {
     align-items: flex-start;
     flex-direction: column;
 
+}
+
+.card{
+    width: 100%;
 }
 
 .textfield {

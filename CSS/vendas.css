@@ -49,6 +49,7 @@ body {
     height: 100%;
     display: flex;
     align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -60,9 +61,7 @@ body {
 .item {
     width: 40%;
     height: 25%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10%;
+    margin: 20px;
     background-color: #FFFFFF;
     border-radius: 13px;
     padding: 10px;
@@ -264,12 +263,24 @@ body {
     position: relative;
     bottom: 0;
     border:transparent;
-    border-top: #C7C6C6;
-    border-width: 1px;
     border-style: solid;
     justify-content: center;
     align-items: center;
    
+}
+
+#total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #C7C6C6;
+}
+
+.sale-summary h5{
+    color: #2E3559;
+    font-weight: 700;
 }
 
 .button-pay-form{
