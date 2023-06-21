@@ -25,7 +25,7 @@
                         <input type="text" placeholder="Digite seu nome..." id="nome" onkeypress="return apenasLetras(event)" required>
 
                         <label for="nome-estabelecimento">Nome do estabelecimento</label>
-                        <input type="text" placeholder="Digite o nome do estabelecimento..." id="nome-estabelecimento" onkeypress="return apenasLetras(event)" required>
+                        <input type="text" placeholder="Digite o nome do estabelecimento..." id="nome-estabelecimento" onkeypress="return apenasLetrasENumeros(event)" required>
 
                         <div class="textfield">
                             <label for="email">Email</label>
@@ -52,10 +52,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
     <script>
-        function apenasLetras(event) {
-            const key = event.keyCode;
-            return ((key >= 65 && key <= 90) || (key >= 97 && key <= 122) || key === 8);
-        }
+       function apenasLetras(event) {
+    const key = event.keyCode;
+    return (
+        (key >= 65 && key <= 90) || // letras maiúsculas
+        (key >= 97 && key <= 122) || // letras minúsculas
+        key === 8 || // tecla Backspace
+        key === 32 // espaço
+    );
+}
+
+function apenasLetrasENumeros(event) {
+    const key = event.keyCode;
+    return (
+        (key >= 65 && key <= 90) || // letras maiúsculas
+        (key >= 97 && key <= 122) || // letras minúsculas
+        (key >= 48 && key <= 57) || // números
+        key === 8 || // tecla Backspace
+        key === 32 // espaço
+    );
+}
+
+
 
         function validarEmail(email) {
             const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
