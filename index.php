@@ -20,7 +20,7 @@
 
         <div class="start-business">
             <h1>Quer <span>começar</span> com os<br> negócios?<br><span>Entre </span>agora!</h1>
-            <a href="/HTML/cadastro_proprietario.html"><button>Começar!</button></a>
+            <a href="cadastro_proprietario.php"><button>Começar!</button></a>
         </div>
 
         <div class="login-acount">

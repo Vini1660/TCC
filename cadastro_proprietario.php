@@ -1,3 +1,6 @@
+<?php
+require_once "config.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,7 +19,7 @@
 <body>
     <div class="main">
         <div class="left">
-            <form>
+            <form id="cadastroForm" onsubmit="cadastrar()">
                 <div class="card">
                     <div class="textfield">
                         <h1>Crie sua <span>conta</span> <br> e <span>gerencie</span> sua loja</h1>
@@ -25,7 +28,7 @@
                         <input type="text" placeholder="Digite seu nome..." id="nome" onkeypress="return apenasLetras(event)" required>
 
                         <label for="nome-estabelecimento">Nome do estabelecimento</label>
-                        <input type="text" placeholder="Digite o nome do estabelecimento..." id="nome-estabelecimento" onkeypress="return apenasLetrasENumeros(event)" required>
+                        <input type="text" placeholder="Digite o nome do estabelecimento..." id="nomeEstabelecimento" onkeypress="return apenasLetrasENumeros(event)" required>
 
                         <div class="textfield">
                             <label for="email">Email</label>
@@ -37,7 +40,7 @@
                             <input type="password" placeholder="Digite sua senha..." id="senha" required>
                         </div>
 
-                        <button type="button" class="btn" onclick="cadastrar()">Cadastrar</button>
+                        <button type="button" class="btn">Cadastrar</button>
                     </div>
 
                     <a href="/HTML/index.html" class="link"><i class="fas fa-arrow-left"></i> Voltar</a>
@@ -82,7 +85,7 @@ function apenasLetrasENumeros(event) {
 
         function cadastrar() {
             const nome = document.getElementById("nome").value;
-            const nomeEstabelecimento = document.getElementById("nome-estabelecimento").value;
+            const nomeEstabelecimento = document.getElementById("nomeEstabelecimento").value;
             const email = document.getElementById("email").value;
             const senha = document.getElementById("senha").value;
 
@@ -113,19 +116,33 @@ function apenasLetrasENumeros(event) {
                 });
                 return;
             }
-
-            // Envie os dados do formulário para o servidor ou realize outras ações aqui
-            Swal.fire({
-                icon: 'success',
-                title: 'Sucesso',
-                text: 'Cadastro realizado com sucesso!',
-                showConfirmButton: false,
-                timer: 1500,
-                didClose: () => {
-                    window.location.href = "/HTML/home.html"; // Redirecionar para a página de home após o cadastro
                 }
             });
         }
+
+      function cadastrar() {
+   var nome = document.getElementById('nome').value;
+   var nomeEstabelecimento = document.getElementById('nomeEstabelecimento').value;
+   var email = document.getElementById('email').value;
+   var senha = document.getElementById('senha').value;
+
+   // Cria um objeto FormData para enviar os dados
+   var formData = new FormData();
+   formData.append('nome', nome);
+   formData.append('nomeEstabelecimento', nomeEstabelecimento);
+   formData.append('email', email);
+   formData.append('senha', senha);
+
+   // Envia os dados para o PHP usando AJAX
+   var xhr = new XMLHttpRequest();
+   xhr.open('POST', 'cadastrar.php', true);
+   xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+         
+   };
+   xhr.send(formData);
+}
+
     </script>
 </body>
 </html>
