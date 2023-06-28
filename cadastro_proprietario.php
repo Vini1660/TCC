@@ -117,10 +117,10 @@ function apenasLetrasENumeros(event) {
                 return;
             }
                 }
-            });
-        }
+    </script>
 
-      function cadastrar() {
+    <script>
+         function cadastrar() {
    var nome = document.getElementById('nome').value;
    var nomeEstabelecimento = document.getElementById('nomeEstabelecimento').value;
    var email = document.getElementById('email').value;
@@ -142,7 +142,6 @@ function apenasLetrasENumeros(event) {
    };
    xhr.send(formData);
 }
-
-    </script>
+</script>
 </body>
 </html>
