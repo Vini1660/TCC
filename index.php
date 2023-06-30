@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/TCC/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
 
         <div class="login-acount">
             <h1 style="padding-bottom: 5px"><span>Já tem</span> uma conta? <br> Entre aqui!</h1>
-            <a href="/HTML/login_proprietario.html"><button id="proprietario">Proprietário</button></a>
-            <a href="/HTML/login_fucionarios.html"><button id="vendedor">Vendedor</button></a>
+            <a href="/TCC/login_proprietario.php"><button id="proprietario">Proprietário</button></a>
+            <a href="/TCC/login_fucionarios.php"><button id="vendedor">Vendedor</button></a>
         </div>
     </main>
 </body>

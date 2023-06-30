@@ -1,14 +1,17 @@
 <?php
-$servername = "db4free.net";
-$username = "root64";
-$password = "idfc9856";
-$database = "pdvhermes";
 
-// Estabelecer conexão
-$conn = mysqli_connect($servername, $username, $password, $database);
+    $dbHost= 'Localhost';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName = 'PDV';
 
-// Verificar conexão
-if (!$conn) {
-    die("Falha na conexão: " . mysqli_connect_error());
-}
+    // Estabelecer conexão
+        $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+
+    /* // Verificar conexão
+    if($conexao->connect_errno) {
+        echo "Erro";
+    }   else    {
+        echo "Conexão efetuada com sucesso!";
+    } */
 ?>
